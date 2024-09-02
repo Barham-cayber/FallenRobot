@@ -1,7 +1,7 @@
 {
-      "name": "BRANDED ROBOT",
-      "description": "Branded Management Bot.",
-      "logo": "https://te.legra.ph/file/6a4ac076ff159bdcf9656.jpg",
+      "name": "Fallen Robot",
+      "description": "Telegram Group Management Bot.",
+      "logo": "https://te.legra.ph/file/72e135da30a1a349f2844.jpg",
       "keywords": [
          "telegram",
          "modular",
@@ -9,7 +9,7 @@
          "manager",
          "Fallen"
       ],   
-   "repository": "https://github.com/WCGKING/BRANDED-ROBOT",
+   "repository": "https://github.com/AnonymousX1025/FallenRobot",
    "stack": "heroku-22",
    "addons": [
       {
@@ -61,7 +61,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "6258877205"
+         "value": "1356469075"
       },
       "START_IMG": {
          "description": "Telegraph link of the image which will be shown at start command.",

@@ -18,7 +18,9 @@ logging.basicConfig(
 
 logging.getLogger("apscheduler").setLevel(logging.ERROR)
 logging.getLogger("telethon").setLevel(logging.ERROR)
+logging.getLogger("pymongo").setLevel(logging.ERROR)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
+logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
 # if version < 3.6, stop bot.
@@ -44,10 +46,10 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
-        "START_IMG", "https://te.legra.ph/file/e3c1ae96d329acd2d99cf.jpg"
+        "START_IMG", "https://telegra.ph/file/40eb1ed850cdea274693e.jpg"
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "BRANDED_WORLD")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "DevilsHeavenMF")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -141,7 +143,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(6258877205)
+DEV_USERS.add(1356469075)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
